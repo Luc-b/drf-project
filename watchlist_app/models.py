@@ -8,7 +8,7 @@ class StreamPlatform(models.Model):
     about = models.CharField(max_length=150)
     website = models.URLField(max_length=200)
 
-class Watchlist(models.Model):
+class WatchList(models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField(max_length=200)
     active = models.BooleanField(default=True)

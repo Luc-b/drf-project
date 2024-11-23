@@ -1,12 +1,12 @@
 from rest_framework import serializers
-from watchlist_app.models import Movie
+from watchlist_app.models import WatchList
 
-class MovieSerializer(serializers.ModelSerializer):
+class WatchListSerializer(serializers.ModelSerializer):
     
     len_name = serializers.SerializerMethodField()
     
     class Meta:
-        model = Movie
+        model = WatchList
         fields = "__all__"
         # fields = ['id', 'name', 'description']
         # exclude = ['active']
