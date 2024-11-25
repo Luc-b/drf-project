@@ -6,7 +6,15 @@ from rest_framework import generics, mixins
 from watchlist_app.models import WatchList, StreamPlatform, Review
 from watchlist_app.api.serializers import (WatchListSerializer, StreamPlatformSerializer,
                                            ReviewSerializer)
-
+class ReviewCreate(generics.CreateAPIView):
+    serializer_class = ReviewSerializer
+    
+    def perform_create(self, serializer):
+        pk = self.kwargs.get('pk')
+        movie = WatchList.objects.get(pk=pk)
+        
+        serializer.save(watchlist=movie)
+    
 class ReviewList(generics.ListAPIView):
     
     serializer_class = ReviewSerializer
