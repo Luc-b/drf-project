@@ -2,10 +2,11 @@ from rest_framework import serializers
 from watchlist_app.models import WatchList, StreamPlatform, Review
 
 class ReviewSerializer(serializers.ModelSerializer):
+    review_usrr = serializers.StringRelatedField(read_only=True)
     
     class Meta:
         model = Review
-        exclude = ('watchlist',)
+        exclude = ('watchlist', 'review_user',)
         # fields = "__all__"
 
 class WatchListSerializer(serializers.ModelSerializer):
