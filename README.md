@@ -19,5 +19,4 @@ Reviews
 - Access, Update & Destroy Individual Review: http://127.0.0.1:8000/api/watch/reviews//<int:review_id>/
 
 User Review
--Access All Reviews For Specific Userr: http://127.0.0.1:8000/api/watch/user-reviews/?username=example
-  
+- Access All Reviews For Specific Userr: http://127.0.0.1:8000/api/watch/user-reviews/?username=example
