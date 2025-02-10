@@ -8,8 +8,6 @@ from rest_framework.authtoken.models import Token
 from watchlist_app.api import serializers
 from watchlist_app import models
 
-
-
 class StreamPlatformTestCase(APITestCase):
     
     def setUp(self):
