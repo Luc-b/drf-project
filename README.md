@@ -1,4 +1,4 @@
-IMDB API Clone DRF
+# IMDB API Clone DRF
 
 Accounts
 - Registration: http://127.0.0.1:8000/api/account/register/
