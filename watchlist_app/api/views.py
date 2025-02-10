@@ -202,6 +202,7 @@ class WatchDetailAV(APIView):
     
 class StreamDetailAV(APIView):
     permission_classes = [AdminOrReadOnly]
+    throttle_classes = [AnonRateThrottle]
     def get(self, request,pk):
         try:
             platform = StreamPlatform.objects.get(pk=pk)
