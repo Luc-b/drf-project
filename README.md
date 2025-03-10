@@ -14,7 +14,8 @@ A RESTful API built with Django REST Framework (DRF) that mimics key functionali
 - Python 3  
 - Django REST Framework  
 - SQLite3 (can be replaced with another database)  
-- JSON-based API responses  
+- JSON-based API responses
+- Swagger UI
 
 ## **API Endpoints**  
 
@@ -64,6 +65,9 @@ A RESTful API built with Django REST Framework (DRF) that mimics key functionali
    ```
    http://127.0.0.1:8000/api/
    ```  
+
+![image](https://github.com/user-attachments/assets/8a61dfe2-aae6-4af5-a289-f458380f6a16)
+
 
 ## **Project Structure**  
 ```
