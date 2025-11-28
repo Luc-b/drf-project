@@ -90,3 +90,4 @@ imdb-api-clone/
 
 ## **Author**  
 Luc-b  
+go to my portfolio - > https://www.notion.so/Lucijana-Bubnji-2a6d7cf1d50980588542fd3b52dbc461?source=copy_link
