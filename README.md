@@ -13,7 +13,7 @@ A RESTful API built with Django REST Framework (DRF) that mimics key functionali
 ## **Technologies Used**  
 - Python 3  
 - Django REST Framework  
-- SQLite3 (can be replaced with another database)  
+- SQLite3 
 - JSON-based API responses
 - Swagger UI
 
